@@ -1,3 +1,3 @@
 !(function () {
-	console.log('tracking')
+	console.warn('tracking')
 })();
