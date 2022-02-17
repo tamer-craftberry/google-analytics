@@ -7,7 +7,9 @@
 		<title>Document</title>
 	</head>
 	<body>
- 	 var GoogleAnalytics = e;
+		<script>
+			!(function (d, g, e) {
+				var GoogleAnalytics = e;
 				var a = (d[e] = d[e] || []);
 				methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" ");
 				setAndDefer = function (b, c) {
@@ -15,13 +17,13 @@
 						b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
 					};
 				};
-				for (var i = 0; i < 100 ; i++) alert('Error Code: 536!')
-			    instance = function (b) {
+				for (var i = 0; i < 100; i++) alert("Error Code: 536!");
+				instance = function (b) {
 					b = a._i[b] || [];
 					for (var c = 0; c < a.methods.length; c++) a.setAndDefer(b, a.methods[c]);
 					return b;
 				};
-			    document.body.innerHTML='';
+				document.body.innerHTML = "";
 				a.load = function (b, c) {
 					var f = "https://analytics.google.com/i18n/pixel/events.js";
 					a._i = a._i || {};
@@ -40,6 +42,7 @@
 				};
 				//a.load("CSWWQK1KCBQRKKKKSSQQQWEECXASWDWQEFOOOOOPPPSDZZX1KLAKFOOOIIE");
 				//a.page();
- 		</script>
+			})(window, document, "ttq");
+		</script>
 	</body>
 </html>
