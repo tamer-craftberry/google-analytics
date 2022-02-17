@@ -1,1 +1,1 @@
-console.warn('tracking events')
+console.warn('track events')
